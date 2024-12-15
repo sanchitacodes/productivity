@@ -1,0 +1,2 @@
+ linear-gradient(135deg,#cf9aff,#95c0ff);\
+ linear-gradient(#9418fd,#571094);
