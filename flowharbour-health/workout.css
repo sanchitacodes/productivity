@@ -388,3 +388,52 @@ main .recent_order a{
     width: 10px;
     height: 10px; /* Responsive chart */
 }
+
+
+.right .workoutvideos {
+    margin-top: 20px;
+}
+
+.right .workoutvideos .videos img{
+    width: 60px;
+    height: 40px;
+}
+
+.right .workoutvideos .videos{
+    background-color: #f6f6f9;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    box-shadow:  0 2rem 3rem rgba(132, 139, 200, 0.18);
+    transition: all .3s ease;
+    font-style: italic;
+}
+
+.right .workoutvideos .videos:hover{
+    box-shadow: none;
+}
+
+
+.right .workoutvideos .videos .first{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.right .workoutvideos .videos .middle p{
+    font-size: 13px;
+}
+
+.right p{
+    color: #363949;
+}
+
+
+
+
+
+
+
+
+
+
+
