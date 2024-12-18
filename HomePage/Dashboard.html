@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+.header {
+    height: 12vh;
+    width: 100%;
+   
+}
+.navbar {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px solid #ad3e3e;
+    background-color:#452c63;
+    border-bottom:rgb(218, 112, 214);
+}
+.menu {
+    /* display: none; */
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 24px;
+
+}
+#logo {
+    font-family: 'Irish Grover';
+    font-size: 32px;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 12px;
+    margin: 12px;
+    text-decoration: none;
+  
+    font-weight:500;
+    font-size: 36px;
+
+
+}
+
+.fas fa-hamburger{
+    color: white;
+}
+.lists {
+    display: flex;
+    
+   
+}
+
+.lists ul  {  
+    
+    display: flex;
+   
+    border-radius: 1px solid #ad3e3e;
+    gap: 123px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.account {
+    font-size: 28px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+}
+.lists ul {
+    display: flex;
+   
+    gap: 30px;
+    list-style: none;
+}
+.lists ul li a {
+    text-decoration: none;
+    color:#E9EBF8;
+      font-size: 18px;
+    font-weight: 600;
+}
+
+.cont {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#name{
+    font-family: 'Irish Grover';
+    font-size: 60px;
+    color:white;
+    text-shadow: 2px #000;
+    
+}
+#des{
+    align-items: center;
+    font-weight:600 ;
+    color:white;
+    margin-left: 40px;
+}
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.left {
+    height: 100%;
+    width: 75%;
+    background-color: #ffffff;
+  
+}
+.features{
+   
+    display: flex;
+    justify-content: space-between;
+  
+}
+#D4{
+  background-image: url("pngtree-watercolor-ombre-background-texture-in-shades-of-pink-and-purple-image_13920641.png");
+}
+.feat{
+  
+    background-color:#800080;
+    height:100px;
+    width:200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 30px;
+  
+}
+.feat:hover{
+    background-color: black;
+    color: #ACE1AF;
+}
+.fea{
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+ 
+}
+.navtwo {
+   
+    width: 100%;
+    background-color: #444B73;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+
+
+.n2buttons {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.right {
+    height: 100%;
+    width: 25%;
+    background-color: #444B73;
+}
+
+.hidden { display: none; }
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+
+}
+/* countdown */ 
+
+.countdown-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: auto;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #7A82B2;
+    background-color: #E9EBF8;
+    height: 30%;
+
+}
+
+.motivation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #7A82B2;
+    background-color:#8c96cb;
+    height: 16%;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.playerbox {
+    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg');
+    width: 80%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+#current-time,
+#duration {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    margin: 8px 0 0;
+}
+
+.player-progress {
+    border: 1px solid #666;
+    background-color: #ffffff;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 16px 2px 3px;
+    height: 4px;
+    width: 90%;
+}
+
+.progress {
+    background-color: #544e4e;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music-duration {
+    position: relative;
+    top: -20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-controls {
+    position: relative;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    cursor: pointer;
+}
+
+.fa-solid {
+    font-size: 12px;
+    color: #6a6363;
+    margin: 6px 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.fa-solid:hover {
+    filter: brightness(30%);
+}
+
+.fa-solid:focus {
+    outline: 2px solid #544e4e;
+    outline-offset: 2px;
+}
+
+.play-button {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.shortcuts {
+
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    margin-top: 12px;
+    padding: 12px;
+    height: 16%;
+    border-radius: 20px;  
+    height: 60%;
+    cursor: pointer;
+    background-color: #8c96cb;
+}
+
+/* Styling the Date Input */
+input[type="date"] {
+    appearance: none; /* Removes default browser styling */
+    background: linear-gradient(135deg, #4e89ff, #1e3f96);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+#reset-section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444B73;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+
+#date-section {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+  }
+  
+
+#countdown #a h2{
+    font-size: 40px;
+} 
+
+  
+  /* Placeholder Text Style */
+  input[type="date"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Hover Effect */
+  input[type="date"]:hover {
+    background: linear-gradient(135deg, #3c73d2, #16356a);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Focused Style */
+  input[type="date"]:focus {
+    background: linear-gradient(135deg, #5aa0ff, #2b4fa5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    input[type="date"] {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+
+.shortcuts-title {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+/* Container Styling */
+.scards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Space between rows and columns */
+    padding: 2px;
+  }
+  
+  /* Individual Card Styling */
+  .scard {
+    flex: 1 1 calc(33.33% - 20px); /* Makes cards take up one-third of the row, accounting for gaps */
+    background: linear-gradient(135deg, #4e89ff, #1e3f96);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: calc(33.33% - 20px); /* Ensures cards don't stretch beyond their calculated size */
+  }
+  
+  .scard i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .scard h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Hover Effect */
+  .scard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .scard {
+      flex: 1 1 calc(50% - 20px); /* Two cards per row for smaller screens */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .scard {
+      flex: 1 1 100%; /* Single card per row for very small screens */
+      max-width: 100%;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.main {
+    margin: 0;
+    font-family: 'Poppins';
+   
+    color: #0b1957;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("horizontal\ purple\ wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main p{
+    text-align: center;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main h1{
+    font-style: italic;
+    font-family: 'irish grover';
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0b1957;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-overlay-one{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f6f6f6;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.4rem;
+  
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.subheading{
+    text-align: center;
+}
+
+.topic{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #1C2135;
+}
+  .footer{
+    width:100%;
+    height:200px;
+    background-color: #452c63;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footHead{
+    color: white;
+   
+    margin-top: 20px;
+    font-family: 'Irish Grover';
+    font-weight: 600px;
+  }
+  .aboutpara{
+    margin-top: 20px;
+   
+    color: white;
+  }
+  .item{
+    list-style: none;
+    margin-top: 10px;
+
+  }
+  .wrap{
+    width:400px;
+    height:100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #contact{
+    color:white;
+    display:wrap;
+    list-style: none;
+    float:right;
+   
+  }
+  #follow{
+    font-weight: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  .list{
+    justify-content: space-evenly;
+  }
+  #contactus{
+    font-weight: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .icon{
+    display: flex;
+    justify-content: space-evenly;
+  }
+    </style>
+</head>
+<body>
+       <div class="account">
+            <i class="ri-account-circle-fill"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="cont" id="cont">
+      <div class="left">
+        <div class="navtwo">
+          <button class="n2buttons btn">Personal Dashroard</button>
+          <button class="n2buttons btn"><a href="study.html"  >Study</a></button>
+          <button class="n2buttons btn">Time management</button>
+          <button class="n2buttons btn">Health</button>
+          <button class="n2buttons btn">Expense</button>
+        </div>
+
+        <div class="shortcuts">
+          <h2 class="shortcuts-title">Shortcuts</h2>
+          <div class="scards">
+            <div class="scard">
+              <i class=""></i>
+              <h3>To Do List</h3>
+            </div>
+            <div class="scard">
+              <i class="ri-timer-line"></i>
+              <h3>Stopwatch</h3>
+            </div>
+            <div class="scard">
+              <i class="ri-timer-line"></i>
+              <a href="expense/index.html"></h3>Expense Tracker</h3></a>
+            </div>
+            <div class="scard">
+              <i class="ri-timer-line"></i>
+              <h3>Mood Tracker</h3>
+            </div>
+            <div class="scard">
+              <i class="ri-timer-line"></i>
+              <h3>Pomodoro</h3>
+            </div>
+            <div class="scard">
+              <i class="ri-timer-line"></i>
+              <h3>Timer</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="right">
+       
+      
+        <div class="countdown-container">
+        
+          <div id="date-section">
+              <input type="date" id="custom-date" placeholder="Select your target date">
+              <button onclick="setCustomDate()">Set Target Date</button>
+          </div>
+  
+          <!-- Reset Button Section -->
+          <div id="reset-section" style="display: none;">
+              <button onclick="resetCountdown()"><i class="ri-refresh-line"></i></button>
+          </div>
+        <!--   Countdown Section -->
+          <div id="countdown">
+              <div id="a">
+                  <h2 id="days">00</h2>
+                  <p>Days</p>
+              </div>
+          </div>
+      </div>
+  
+        
+        <div class="motivation">
+          <h2>Quote of the day</h2>
+          <blockquote id="quote">Loading...</blockquote>
+          <span id="author">Loading...</span>
+        </div>
+        <div class="music">
+          <div class="playerbox">
+            <h2 id="music-title">Lofi</h2>
+            <div class="player-progress" id="player-progress">
+              <div class="progress" id="progress"></div>
+              <div class="music-duration">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+              </div>
+            </div>
+            <div class="player-controls">
+              <i
+                class="fa-solid fa-backward"
+                title="Previous"
+                id="prev"
+                aria-label="Previous"
+              ></i>
+              <i
+                class="fa-solid fa-play play-button"
+                title="Play"
+                id="play"
+                aria-label="Play"
+              ></i>
+              <i
+                class="fa-solid fa-forward"
+                title="Next"
+                id="next"
+                aria-label="Next"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
