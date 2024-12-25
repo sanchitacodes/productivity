@@ -1,0 +1,333 @@
+
+.featuresHeading{
+    position:sticky;
+    top:0px;
+    top:0;
+    left:0;
+    right:0;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    background-color: black;
+    color:white;
+    width:100%;
+
+}
+.container{
+   background-color: #093379;
+   border:#003049;
+   border-radius: 30px;
+   box-shadow: 0px 0px 5px 5px black;
+}
+.arrowImage{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+margin-top:50px;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+}
+.container pre{
+    text-align: center;
+    align-items: center;
+    color:#219EBC;
+    font-weight: 300;
+    font-size: 24px;
+
+
+}
+.healthImage{
+    margin-left: 100px;
+}
+.container button{
+   
+    display: flex;
+
+    justify-content: center;
+    align-items:center;
+    margin-left: 550px;
+    background-color:#219EBC;
+    color: white;
+    border:#219EBC;
+    border-radius: 3px;
+    height:40px;
+    width:100px;
+}
+
+
+
+.study{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.study{
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+    position:relative;
+
+}
+.project{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.project{ 
+   
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+     position:relative;
+}
+.why{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.why{
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+     position:relative;
+}
+.TimeTracking{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.TimeTracking{
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+     position:relative;
+}
+.resourcePlanning{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.resourcePlanning{
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+     position:relative;
+}
+.invoicing{
+    margin-left: 100px;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.invoicing{
+    color:transparent;
+    -webkit-text-stroke:3px #003049;
+     position:relative;
+}
+.study::before{
+    content:"Study Motivation";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+.project::before{
+    content:"Project Management";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+.TimeTracking::before{
+    content:"Time Tracking";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+.resourcePlanning::before{
+    content:"Resource Planning";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+.invoicing::before{
+    content:"Invoicing";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+
+.why::before{
+    content:"Why us?";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:#003049;
+    border-right: 3px solid #003049;
+    transition: 1s ease-in-out;
+}
+.study:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px #003049);
+}
+.why:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px #003049);
+}
+.project:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px #003049);
+}
+.TimeTracking:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px #003049);
+}
+.invoicing:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px #003049);
+}
+.resourcePlanning:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 10px #003049);
+}
+
+.featureText{
+    color:white;
+    font-size: 20px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin:10px;
+   margin-top: 20px;
+  
+
+}
+.image{
+    height:300px;
+    width:300px;
+    border:10px solid #003049;
+    border-radius: 30px;
+    
+}
+.projectManagement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  background-image: url('pexels-padrinan-255379.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.footer{
+    background-color: black;
+    color:white;
+    width:100%;
+    height:50px;
+}
+.footer p{
+    display: flex;
+    justify-content: center;
+}
+.hidestudy{
+    display:none;
+    width:900px;
+    height:150px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+}
+.hideinvoicing{
+    display:none;
+    width:850px;
+    height:100px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+}
+.hidewhy{
+    display:none;
+    width:1000px;
+    height:300px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+}
+.hideresourceplanning{
+    display:none;
+    width:800px;
+    height:100px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+    
+}
+.hideTimeTracking{
+    display:none;
+    width:800px;
+    height:100px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+}
+.hideproject{
+    display:none;
+    width:800px;
+    height:100px;
+    background-color: #8ECAE6;
+    border:10px solid #8ECAE6;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.myDiv:hover + .hidestudy{
+    display:block;
+    color:black;
+}
+.myDiv:hover + .hideproject{
+    display:block;
+    color:black;
+}
+.myDiv:hover + .hideinvoicing{
+    display:block;
+    color:black;
+}
+.myDiv:hover + .hideTimeTracking{
+    display:block;
+    color:black;
+}
+.myDiv:hover + .hidewhy{
+    display:block;
+    color:black;
+}
+.myDiv:hover + .hideresourceplanning{
+    display:block;
+    color:black;
+}
+
+
+
+
