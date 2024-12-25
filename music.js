@@ -1,4 +1,3 @@
-
 const title = document.getElementById('music-title'),
     currentTimeEl = document.getElementById('current-time'),
     durationEl = document.getElementById('duration'),

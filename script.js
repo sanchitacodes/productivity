@@ -10,7 +10,6 @@ function setCustomDate() {
 
     if (customDateInput) {
         targetDate = new Date(customDateInput).getTime();
-
         if (interval) {
             clearInterval(interval);
         }
@@ -55,6 +54,7 @@ function updateCountdown() {
             <h2>${formatTime(daysLeft)}</h2>
             <p>Days</p>
         `;
+        countdownValue.style.color = '#ff5733';
     }
 }
 
